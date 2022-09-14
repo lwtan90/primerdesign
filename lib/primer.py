@@ -8,6 +8,9 @@ class Primer:
         self.tm = 0
 	self.returnInfo()
 
+    def __str__(self):
+        return 'Information for primer {}'.format(self.sequence)
+
     # return information about the primer
     def returnInfo(self):
         print("===================")
@@ -34,3 +37,5 @@ class Primer:
         return self.tm
 
 p1 = Primer("ATTGCCC")
+print(p1)
+
